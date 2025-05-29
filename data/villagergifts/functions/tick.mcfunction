@@ -1,0 +1,2 @@
+execute as @a[scores={villagergifts.cooldown=1..}] run scoreboard players remove @s villagergifts.cooldown 1
+execute as @a[scores={villagergifts.cooldown=..0,villagergifts.hunger=..6}] at @s if entity @e[type=minecraft:villager,limit=1,sort=nearest,distance=..3] run function villagergifts:villager/start
